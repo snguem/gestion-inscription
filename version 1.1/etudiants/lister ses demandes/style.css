@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #020295;
+}
+
+.chargement{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chargement::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #020295;
+    transform: translateX(-500px);
+    animation: animate 1.5s .5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+
+
+
+.container{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px 0.5px #02025a, inset 0 5px 20px 0.5px #02025a;
+    width: 90%;
+    margin: 50px 0;
+}
+
+h2{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    margin: 50px 0;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* margin: 20px 0; */
+    color: white;
+}
+
+
+label input{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    padding: 10px 5px;
+    
+}
+
+select{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    /* padding: 10px 5px; */
+}
+
+.trier{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+td{
+    border: 2px solid white;
+    text-align: center;
+    padding: 20px;
+    font-weight: 600;
+}
+
+thead{
+    font-weight: 600;
+    font-size: 26px;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 0 auto;
+    color: white;
+}
+
+.date{
+    width: 200px;
+}
+
+.motif{
+    width: 600px;
+}
+
+.statut{
+    width: 300px;
+}
+
+button{
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin: 50px 0 0 30px;
+    box-shadow: 0 0 20px 0.5px #02025a;
+    cursor: pointer;
+}
+
+button:focus{
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+}
+
+a{
+    text-decoration: none;
+}

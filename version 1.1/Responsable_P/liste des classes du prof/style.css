@@ -1,0 +1,186 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #020295;
+}
+
+.chargement{
+    width: 400px;
+    height: 200px;
+    /* position: absolute; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chargement::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #020295;
+    transform: translateX(-500px);
+    animation: animate 1.5s .5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+}
+
+.container{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    border-radius: 10px;
+    margin: 50px 0;
+    box-shadow: 0 0 20px 0.5px #02025a, inset 0 5px 20px 0.5px #02025a;
+    /* position: absolute; */
+    width: 95%;
+    margin: 50px 0;
+    color: white;
+}
+
+
+label input{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    /* padding: 10px 5px; */
+    width: 40%;
+}
+
+label select{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    /* padding: 10px 5px; */
+    width: 70%;
+}
+
+
+h3{
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0 50px;
+    color: white;
+}
+
+#nom{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+#nom input{
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.info{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 20px;
+}
+
+.info label{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+thead{
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+
+td{
+    border: 2px solid white;
+    padding: 20px 30px;
+}
+
+.niveau{
+    width: 500px;
+}
+
+/* .filiere{
+    width: 600px;
+} */
+
+table{
+    border-collapse: collapse;
+}
+
+select{
+    height: 30px;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.boutton{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;   
+    margin: 50px 0 20px;
+    width: 90%;
+}
+
+.boutton2{
+    display: flex;
+    /* flex-direction: row-reverse; */
+    /* justify-content: space-around;    */
+    margin: 50px 0 20px;
+    width: 90%;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus{
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+}

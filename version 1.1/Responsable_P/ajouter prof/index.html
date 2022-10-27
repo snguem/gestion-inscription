@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ajouter prof</title>
+</head>
+<body>
+    <form action="../index.html">
+        <h2>Ajouter Professeur</h2>
+        <label for="nom-prenom">Nom et Prenom <input type="text" placeholder="Paul Lambert" name="nom-prenom" required></label>
+        <label for="grade">grade
+            <select name="grade" id="grade" required>
+                <option value="" hidden></option>
+                <option value="">Lorem ipsum dolor sit amet.</option>
+                <option value="">Lorem ipsum dolor sit amet.</option>
+                <option value="">Lorem ipsum dolor sit amet.</option>
+                <option value="">Lorem ipsum dolor sit amet.</option>
+            </select>
+        </label>
+        <h3>Modules</h3>
+        <label for="mod">Algorithme <input type="checkbox" name="mod" id="mod"></label>
+        <label for="mod2">UML<input type="checkbox" name="mod2" id="mod2"></label>
+        <label for="mod3">C<input type="checkbox" name="mod3" id="mod3"></label>
+        <label for="mod4">Python <input type="checkbox" name="mod4" id="mod4"></label>
+        <label for="mod5">Cisco<input type="checkbox" name="mod5" id="mod5"></label>
+        <div class="boutton">
+            <a href="../index.html"><button type="button" style="background-color: #f72500;">Annuler</button></a>
+            <button type="submit" style="background-color: green;">Envoyer</button>
+        </div>
+    </form>
+    
+</body>
+</html>

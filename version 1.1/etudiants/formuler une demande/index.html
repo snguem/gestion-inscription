@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formuler une demande</title>
+</head>
+<body>
+    <form action="../index.html">
+        <h2>Formulaire de demande</h2>
+        <label for="date" class="date">Date <input type="text" id="date" disabled></label>
+        <label for="objet" class="objet">Objet <input type="text" placeholder="Suspension d'inscription" disabled></label>
+        <label for="motif" class="motif">motif :<textarea name="motif" id="" cols="60" rows="10" required></textarea></label>
+        <div class="boutton">
+            <a href="../index.html"><button type="button" style="background-color: #f72500;">Annuler</button></a>
+            <button type="submit" style="background-color: green;">Envoyer</button>
+        </div>
+    </form>
+
+    <script>
+        let date, day;
+        const input = document.getElementById("date");
+        date = new Date();
+        day = date.toLocaleDateString();
+
+        input.placeholder = day;
+    </script>
+</body>
+</html>

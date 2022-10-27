@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>inscription</title>
+</head>
+<body>
+    <!-- <div class="chargement">Chargement ...</div> -->
+
+    <form action="../index.html" class="formulaire">
+        <h3>Fiche d'inscription</h3>
+        <label for="annee" class="annee">Annee scolaire <input type="number" name="annee" id="annee" disabled></label>
+        <label for="nom" class="nom">Nom et prenom <input type="text" name="nom" id="nom" placeholder="Jules de Nantes" required></label>
+        <label for="datenaiss" class="datenaiss">Date de naissance <input type="text" name="datenaiss" id="datenaiss" required placeholder="2-12-2000"></label>
+        <label for="adresse" class="address">Addresse <textarea name="adresse" id="adresse" cols="30" rows="5" placeholder="2 rue de monter a gauche"></textarea></label>
+        <label for="classe" class="classe">Classe
+            <select name="classe" id="classe">
+                <option value="" hidden></option>
+                <option value="">Lorem ipsum dolor sit.</option>
+                <option value="">Lorem ipsum dolor sit.</option>
+                <option value="">Lorem ipsum dolor sit.</option>
+                <option value="">Lorem ipsum dolor sit.</option>
+                <option value="">Lorem ipsum dolor sit.</option>
+                <option value="">Lorem ipsum dolor sit.</option>
+            </select>
+        </label>
+        <div class="bouton">
+            <a href="../index.html"><button type="button" style="background-color: #f72500;">Annuler</button></a>
+            <button type="submit" style="background-color: green;">Valider</button>
+        </div>
+    </form>
+
+    <script>
+        let date, day;
+        const input = document.getElementById("annee");
+        date = new Date();
+        day = date.getFullYear();
+
+        input.placeholder = day + " - " + (day + 1);
+    </script>
+</body>
+</html>

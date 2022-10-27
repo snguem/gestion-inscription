@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Liste des classes des prof</title>
+</head>
+<body>
+    
+    <div class="container">
+        <form action="index.html">
+            <h3>Affecter une classe</h3>
+            <div class="info">
+                <label for="niveau">niveau 
+                    <select name="niveau" id="" required>
+                        <option value="" hidden></option>
+                        <option value="l1">Licence 1</option>
+                        <option value="l2">Licence 2</option>
+                        <option value="l3">Licence 3</option>
+                        <option value="m1">Master 1</option>
+                        <option value="m2">Master 2</option>
+                    </select>
+                </label>
+
+                <label for="filiere">filiere 
+                    <select name="filiere" id="" required>
+                        <option value="" hidden></option>
+                        <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                        <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                        <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                        <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                        <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="boutton">
+                <button type="submit" style="background-color: green;">Affecter</button>
+                <button type="reset" style="background-color: #f72500;">Annuler</button>
+            </div>
+        </form>
+    </div>
+
+
+
+    <div class="container">
+        <h3>Liste des classes du professeur</h3>
+        <label for="nom" id="nom">Nom et prenom <input type="text" name="nom" id="nom" placeholder="Paul Lambert" disabled></label>
+        <div class="info">
+            <label for="niveau">niveau 
+                <select name="niveau" id="">
+                    <option value="" hidden></option>
+                    <option value="l1">Licence 1</option>
+                    <option value="l2">Licence 2</option>
+                    <option value="l3">Licence 3</option>
+                    <option value="m1">Master 1</option>
+                    <option value="m2">Master 2</option>
+                </select>
+            </label>
+
+            <label for="filiere">filiere 
+                <select name="filiere" id="">
+                    <option value="" hidden></option>
+                    <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                    <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                    <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                    <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                    <option value="lorem">Lorem ipsum dolor sit amet.</option>
+                </select>
+            </label>
+        </div>
+
+        <table>
+            <thead>
+                <td class="niveau">Niveau</td>
+                <td class="filiere">Filiere</td>
+            </thead>
+            <tr>
+                <td class="niveau"></td>
+                <td class="filiere"></td>
+            </tr>
+            <tr>
+                <td class="niveau"></td>
+                <td class="filiere"></td>
+            </tr>
+            <tr>
+                <td class="niveau"></td>
+                <td class="filiere"></td>
+            </tr>
+            <tr>
+                <td class="niveau"></td>
+                <td class="filiere"></td>
+            </tr>
+        </table>
+        <div class="boutton2">
+            <a href="../index.html"><button type="button" style="background-color: #f72500;">Revenir</button></a>
+        </div>
+    </div>
+    
+</body>
+</html>

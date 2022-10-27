@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>liste des etudiants</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Liste des etudiants</h2>
+        <label for="annee" class="annee">Annee Scolaire <input type="text" name="annee" id="annee" disabled></label>
+        <div class="trier">
+            <label for="matricule" class="trie1">Matricule <input type="number" name="matricule" id="matricule"></label>
+            <label for="nom" class="trie2">Nom <input type="text" name="nom" id="nom"></label>
+            <label for="classe" class="classe">Classe 
+                <select name="classe" id="classe">
+                    <option value="" hidden></option>
+                    <option value="">Lorem ipsum dolor sit.</option>
+                    <option value="">Lorem ipsum dolor sit.</option>
+                    <option value="">Lorem ipsum dolor sit.</option>
+                    <option value="">Lorem ipsum dolor sit.</option>
+                </select>
+            </label>
+        </div>
+        <table>
+            <thead>
+                <td class="ma">Matricule</td>
+                <td class="no">Nom et Prenom</td>
+                <td class="dat">Date de naissance</td>
+                <td class="ad">Addresse</td>
+                <td class="cl">Classe</td>
+            </thead>
+            <tr>
+                <td class="ma"></td>
+                <td class="no"></td>
+                <td class="dat"></td>
+                <td class="ad"></td>
+                <td class="cl"></td>
+            </tr>
+            <tr>
+                <td class="ma"></td>
+                <td class="no"></td>
+                <td class="dat"></td>
+                <td class="ad"></td>
+                <td class="cl"></td>
+            </tr>
+            <tr>
+                <td class="ma"></td>
+                <td class="no"></td>
+                <td class="dat"></td>
+                <td class="ad"></td>
+                <td class="cl"></td>
+            </tr>
+            <tr>
+                <td class="ma"></td>
+                <td class="no"></td>
+                <td class="dat"></td>
+                <td class="ad"></td>
+                <td class="cl"></td>
+            </tr>
+        </table>
+        <div class="bouton">
+            <a href="../index.html"><button style="background-color: #f72500;">Revenir</button></a>
+        </div>
+    </div>
+    
+
+    <script>
+        let date, day;
+        const input = document.getElementById("annee");
+        date = new Date();
+        day = date.getFullYear();
+
+        input.placeholder = day + " - " + (day + 1);
+    </script>
+</body>
+</html>

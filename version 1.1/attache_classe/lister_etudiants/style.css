@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #020295; 
+}
+
+.chargement{
+    width: 400px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chargement::after{
+    content: "";
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: #020295;
+    transform: translateX(-500px);
+    animation: animate 1.5s .5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateX(-500px);
+    }
+    100%{
+        transform: translateX(500px);
+    }
+    
+}
+
+
+.container{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 30px;
+    border-radius: 10px;
+    /* margin: 50px 0; */
+    box-shadow: 0 0 20px 0.5px #02025a, inset 0 5px 20px 0.5px #02025a;
+    /* position: absolute; */
+    top: 50px;
+    width: 90%;
+    margin: 50px 0;
+}
+
+h2{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 10px 0 50px;
+}
+
+
+label{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    color: white;
+}
+
+
+label input{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    padding: 10px 5px;
+    
+}
+
+label input::placeholder{
+    color: #8f8181;
+}
+
+.annee{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: white;
+}
+
+.annee input{
+    padding: 5px 10px;
+    /* border-radius: 10px; */
+    border: none;
+    font-size: 18px;
+    color: white;
+}
+
+.trier{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.trier label{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.trier label input{
+    /* border-radius: 10px; */
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    font-size: 18px;
+}
+
+select{
+    height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+    padding: 10px 5px;
+}
+
+td{
+    border: 2px solid white;
+    text-align: center;
+    padding: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    color: white;
+}
+
+thead{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+
+.dat{
+    width: 200px;
+}
+
+.ma{
+    width: 100px;
+}
+
+.cl{
+    width: 100px;
+}
+
+button{
+    display: flex;
+    padding: 10px 20px;
+    color: white;
+    font-size: 18px;
+    border: none;
+    margin: 50px 0 0;
+    box-shadow: 0 0 20px 0.5px #02025a;
+    cursor: pointer;
+}
+
+button:focus{
+    box-shadow: inset 0 0 20px 0.5px #02025a;
+}
+
+a{
+    text-decoration: none;
+}

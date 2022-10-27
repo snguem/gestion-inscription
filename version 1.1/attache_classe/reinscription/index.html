@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Reinscription</title>
+</head>
+<body>
+    <!-- <div class="chargement">Chargement ...</div> -->
+
+    <form action="../index.html">
+        <h3>Reinscription</h3>
+        <label for="matricule" id="matricule">Matricule <input type="number" name="matricule" id="matricule2" required></label>
+        <label for="nom" id="nom">Nom et Prenom <input type="text" name="nom" id="nom2" disabled></label>
+        <label for="date" id="date">Date de naissance <input type="text" name="date" id="" disabled></label>
+        <label for="annee" id="annee">Annee scolaire <input type="text" disabled id="annee2"></label>
+        <label for="classe" id="classe">Classe
+            <select name="classe" id="" required>
+                <option value="" hidden></option>
+                <option value="">Lorem, ipsum dolor.</option>
+                <option value="">Lorem, ipsum dolor.</option>
+                <option value="">Lorem, ipsum dolor.</option>
+                <option value="">Lorem, ipsum dolor.</option>
+                <option value="">Lorem, ipsum dolor.</option>
+                <option value="">Lorem, ipsum dolor.</option>
+            </select>
+        </label>
+        <div class="boutton">
+            <a href="../index.html"><button type="button" style="background-color: #f72500;">Annuler</button></a>
+            <button type="submit" style="background-color: green;">Valider</button>
+        </div>
+    </form>
+    
+
+    <script>
+        let date, day;
+        const input = document.getElementById("annee2");
+        date = new Date();
+        day = date.getFullYear();
+
+        input.placeholder = day + " - " + (day + 1);
+    </script>
+</body>
+</html>
