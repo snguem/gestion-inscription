@@ -13,3 +13,6 @@
 # connexion RP:
       email : responsable@gmail.com
       password = 1234
+      
+# fichier principale
+      version 1.1/indedx.html
